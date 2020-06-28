@@ -821,6 +821,11 @@ footer {
   /* color1: #ffffff; */
 }
 
+.sl-fr a:hover,
+.sl-fr a:focus {
+  cursor: url(../images/finger.svg), pointer;
+}
+
 .subscribe {
   /* display: flex;
   padding-left: auto; */
@@ -842,6 +847,7 @@ footer {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   outline-width: 0px;
+  cursor: url(../images/icon-send.svg), pointer;
 }
 
 .footer-bottom-box {
