@@ -157,7 +157,9 @@ header .link:focus {
   color: var(--accent-color);
   outline-width: 0px;
 }
-
+/* .icon {
+  margin-right: 10px;
+} */
 /* </header> */
 
 /* <studio-main> */
@@ -380,14 +382,11 @@ header .link:focus {
   /* background: #2196f3; */
 }
 
-.team-img {
-  border-radius: 0px;
-}
-
 .team-body {
   background: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
+  padding-bottom: 24px;
 }
 
 .team-title {
@@ -453,19 +452,33 @@ header .link:focus {
 .social-link {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  padding-bottom: 24px;
+  align-items: center;
+}
+
+.social-link-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-link li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color1, #afb1b8);
 }
 
 .social-link a:hover,
 .social-link a:focus {
-  color: var(--primary-white-color);
+  --color1: var(--primary-white-color);
   background-color: var(--accent-color);
   outline-width: 0px;
-}
-
-.social-link li + li {
-  margin-left: 10px;
 }
 
 /* Наши клиенты */
@@ -702,12 +715,14 @@ footer {
 }
 
 .join b {
+  display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-bottom: 10px;
 }
 
 .join a {
@@ -715,10 +730,11 @@ footer {
   color: var(--primary-white-color);
 }
 
-.join a:hover,
-.join a:focus {
-  background-color: var(--accent-color);
-  outline-width: 0px;
+.sl-fr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .subscribe {
