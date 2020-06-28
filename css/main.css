@@ -604,8 +604,8 @@ header .link:focus {
   margin-bottom: 34px;
 }
 
-.filters li:not(:first-child) {
-  margin-left: 8px;
+.filters > li:not(:last-child) {
+  margin-right: 8px;
 }
 .filters button {
   font-weight: 500;
@@ -615,15 +615,25 @@ header .link:focus {
   letter-spacing: 0.03em;
   color: var(--dark-main-color);
   background: var(--background-primary-gray);
+  padding: 6px 22px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 0;
 }
 
 .filters button:hover,
 .filters button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Наши клиенты */
+.card:hover,
+.card:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 
 .info-overlay {
   display: inline-block;
