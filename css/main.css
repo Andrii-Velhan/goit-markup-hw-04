@@ -730,11 +730,28 @@ footer {
   color: var(--primary-white-color);
 }
 
+.social-icon-fr {
+  width: 20px;
+  height: 20px;
+  fill: var(--color1, #ffffff);
+}
+
+/* .social-link a:hover,
+.social-link a:focus {
+  --color1: var(--primary-white-color);
+  background-color: var(--accent-color);
+  outline-width: 0px;
+} */
+
 .sl-fr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+}
+
+.sl-fr a {
+  background: rgba(255, 255, 255, 0.1);
+  /* color1: #ffffff; */
 }
 
 .subscribe {
